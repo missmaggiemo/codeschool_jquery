@@ -1,0 +1,100 @@
+<!-- destination page -->
+
+{%extends "base.html"%}
+
+{%block head%}
+
+<title>jQuery Adventures | Book Your Flight</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="scripts/script-booking.js"></script>
+<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet-dest.css">
+
+{%endblock%}
+
+{%block content%}
+
+  <div class="title">
+    <h1 id="dest">{{destination}}</h1>
+  </div>
+
+
+  <div class="destination flight-form" data-price="{{price}}">
+    <h3  id="book-tour">Book your flight today.</h3>
+    <form id="book-flight" method="post">
+      <input type="hidden" name="arrive" value="{{dest}}">
+      <table>
+        <tr>
+          <td id="label">
+            <label for="nights">Name:</label>
+          </td>
+          <td id="name">
+            <input type="text" class="input-name first-name" name="first-name" value="" placeholder="First">
+          </td>
+          <td id="name">
+            <input type="text" class="input-name last-name" name="last-name" value="" placeholder="Last">
+          </td>
+
+        </tr>
+
+        <tr>
+          <td id="label">
+            <label for="depart">Departing from:</label>
+          </td>
+
+          <td id="input">
+            <input type="text" name="depart" value="">
+          </td>
+
+        </tr>
+
+        <tr>
+          <td id="label">
+            <label for="num-people">Number of People:</label>
+          </td>
+
+          <td id="input">
+            <input type="number" id="num-people" name="num-people" value="1">
+          </td>
+
+        </tr>
+
+        <tr>
+          <td id="label">
+            <label for="date">Date:</label>
+          </td>
+
+          <td id="input">
+            <input type="date" name="date" value="">
+          </td>
+
+        </tr>
+
+        <tr>
+          <td id="label">
+            <label for="nights">Nights:</label>
+          </td>
+
+          <td id="input">
+            <input type="number" name="nights" value="5">
+          </td>
+
+        </tr>
+
+      </table>
+
+      {%if error%}
+      <p class="error">{{error}}</p>
+      {%endif%}
+
+      <p>
+        Total Price: $<span id="price-total">{{price}}</span>
+        <input type="hidden" name="price" id="price-input" value="{{price}}">
+<!--               needs to be set with span in JS -->
+      </p>
+
+      <input type="submit" name="book-it" value="Book My Vacation">
+
+    </form>
+  </div>
+
+{%endblock%}

@@ -1,0 +1,90 @@
+body {
+  font-family: helvetica;
+}
+
+#boarding-pass-div {
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h3 {
+  text-align: center;
+}
+
+button {
+  margin: 10px;
+  padding:5px;
+  background-color: #dcdcdc;
+  border: 1px solid #666;
+  color:#000;
+  text-decoration: none;
+}
+
+/*specific*/
+
+.title-1 {
+  width: 100vw;
+  background-image: url('vacation_2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px;
+  margin-bottom: 5px;
+}
+
+.title-1 h1 {
+  font-size: 3em;
+  margin: 0;
+  color: white;
+}
+
+/*javascript*/
+
+.flight {
+  display: none;
+}
+
+.ticket {
+  display: inline;
+}
+
+.ticket img {
+  display: none;
+  width: 30vw;
+}
+
+.is-loading {
+  
+}
+
+.flight-details {
+  text-align: left;
+  margin: 10px;
+}
+
+.vacation {
+  display: table-cell;
+  width: 50vw;
+  padding: 30px;
+}
+
+.vacation button {
+  margin: 10px;
+}
+
+.confirmation-list {
+  display: table-row;
+  width: 100vw;
+  text-align: center;
+  padding: 0;
+  margin: auto;
+}
+
+
+

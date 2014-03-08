@@ -1,0 +1,112 @@
+{%extends "base.html"%}
+
+{%block head%}
+  <title>jQuery Adventures</title>
+  <script src="scripts/script-1.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet-1.css">
+{%endblock%}
+
+{%block content%}
+
+  <div class="title">
+    <h1>jQuery Travel</h1>
+    <h2><em>Where do you want to go?</em></h2>
+  </div>
+
+<!-- destinations -->
+
+  <div class="destinations" id="all-destinations">
+
+    <h2>Travel Destinations</h2>
+    <p><em>Plan your next adventure.</em></p>
+    <ul id="dest-ul">
+
+      <li>
+        <div class="destination name" id="dest-1">
+          <h3><a href="/destination?dest=rome">Rome, Italy</a></h3>
+          <button id="info">More Info</button>
+        </div>
+        <div class="destination more-info" id="dest-1">
+          <h3><a href="/destination?dest=rome">Rome, Italy</a></h3>
+          <img src="images/rome.jpg" alt="Rome" />
+          <button id="weather">Weather</button>
+        </div>
+      </li>
+      <li>
+        <div class="destination name" id="dest-2">
+          <h3><a href="/destination?dest=paris">Paris, France</a></h3>
+          <button id="info">More Info</button>
+        </div>
+        <div class="destination more-info" id="dest-2">
+          <h3><a href="/destination?dest=paris">Paris, France</a></h3>
+          <img src="images/paris.jpg" alt="Paris" />
+          <button id="weather">Weather</button>
+        </div>
+      </li>
+      <li>
+        <div class="destination name" id="dest-3">
+          <h3><a href="/destination?dest=rio">Rio De Janeiro, Brazil</a></h3>
+          <button id="info">More Info</button>
+        </div>
+        <div class="destination more-info" id="dest-3">
+          <h3><a href="/destination?dest=rio">Rio De Janeiro, Brazil</a></h3>
+          <img src="images/rio.jpg" alt="Rio De Janeiro" />
+          <button id="weather">Weather</button>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+<!-- guided tours -->
+
+  <div class="tours" id="all-tours">
+    <div class="guided-title">
+      <h1>Guided Tours</h1>
+    </div>
+    <ul id="tour-ul">
+
+      <li class="usa tour on-sale" data-discount="299" data-daily-price="600">
+        <div class="guided-tour">
+          <a href="/tour?dest=london"><h2 class="dest">London, England</h2></a>
+          <img src="images/london.jpg" alt="London" />
+          <p id="nights">7 nights in November</p>
+
+          <button>Show Price</button>
+          <p id="price">Price: $2500 per person</p>
+
+        </div>
+      </li>
+
+      <li class="europe tour on-sale" data-discount="176" data-daily-price="357">
+        <div class="guided-tour">
+          <a href="/tour?dest=barcelona"><h2 class="dest">Barcelona, Spain</h2></a>
+          <img src="images/barcelona.jpg" alt="Barcelona" />
+          <p id="nights">7 nights in May</p>
+
+          <button>Show Price</button>
+          <p id="price">Price: $2000 per person</p>
+
+        </div>
+      </li>
+
+      <li class="asia tour featured" data-discount="349" data-daily-price="700">
+        <div class="guided-tour">
+          <a href="/tour?dest=tokyo"><h2 class="dest">Tokyo, Japan</h2></a>
+          <img src="images/tokyo.jpg" alt="Tokyo" />
+          <p id="nights">7 nights in June</p>
+
+          <button>Show Price</button>
+          <p id="price">Price: $3000 per person</p>
+
+        </div>
+      </li>
+
+    </ul>
+    <ul id="filters">
+      <li><button class="on-sale-button">On Sale</button></li>
+      <li><button class="featured-button">Featured</button></li>
+    </ul>
+  </div>
+
+{%endblock%}

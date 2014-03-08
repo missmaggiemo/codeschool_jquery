@@ -1,0 +1,116 @@
+/*this will contain the style info for the header and footer*/
+
+body {
+  font-family: helvetica;
+  text-align: center;
+  background-color: #FBFBFB;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+img {
+  margin: 10px;
+}
+
+button, input[type=submit] {
+  margin: 10px;
+  padding:5px;
+  background-color: #dcdcdc;
+  border: 1px solid #666;
+  color:#000;
+  text-decoration: none;
+}
+
+.error {
+  color: red;
+}
+
+
+/*header*/
+
+.header {
+  display: block;
+  clear: both;
+  margin: auto;
+  background-color: #DCECF9;
+  overflow: hidden;
+  margin-bottom: 20px;
+  font-size: 0.8em;
+}
+
+.header a:hover {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.header .logo {
+  float: left;
+  text-align: left;
+  margin: 10px 20px 10px 20px;
+}
+
+.header .menu[id=container] {
+  float: right;
+}
+
+.menu[id=container] {
+  margin: 0 10px 0 10px;
+}
+
+.menu[id=initial] {
+  display: inline-block;
+}
+
+.menu button[class=show-menu] {
+  margin: 10px;
+  padding:10px;
+  background-color: #DCECF9;
+  border: 10px solid white;
+  color:#000;
+  text-decoration: none;
+}
+
+.show-menu h1 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.menu[id=drop-down] {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+  padding: 12px;
+  font-size: 1.3em;
+  border: 10px solid white;
+}
+
+#drop-down ul, li {
+  margin: 10px;
+  display: inline;
+}
+
+
+/*footer*/
+
+.footer {
+  border: 20px solid #DCECF9;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}

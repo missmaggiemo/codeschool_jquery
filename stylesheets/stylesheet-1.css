@@ -1,0 +1,198 @@
+.header {
+  margin-bottom: 5px;
+}
+
+h2 {
+  margin: 0;
+  padding: 10px;
+}
+
+
+.margin {
+  margin: 20px;
+}
+
+/*titles*/
+
+.title {
+  background-image: url('airplane_1.png');
+  color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px;
+  margin: none;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 1.7em;
+}
+
+.destinations {
+  padding: 50px;
+  margin: none;
+  font-size: 1.3em;
+}
+
+.guided-title {
+  padding: 50px;
+  margin-bottom: 10px;
+  background-image: url('guided-tour.png');
+  color: black;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+/*destinations*/
+
+#dest-ul {
+  text-align: center;
+  margin: auto;
+}
+
+#dest-ul li {
+  display: inline-block;
+  width: 25vw;
+  vertical-align: text-top;
+}
+
+.destination {
+  margin: 10px 1.5vw;
+}
+
+.more-info {
+  background-color: #A3CEEF;
+  display: none;
+  padding: 20px;
+}
+
+.more-info h3 {
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+  font-size: 0.9em;
+}
+
+.name h3 {
+  margin: 10px;
+}
+
+/*tours*/
+
+#all-tours {
+  padding: 0;
+}
+
+#all-tours h1 {
+  font-size: 3em;
+}
+
+/*tour list*/
+
+.tour {
+  display: inline-block;
+  margin: 2vw;
+  width: 25vw;
+}
+
+.tour h2 {
+  margin-bottom: 20px;
+}
+
+.guided-tour {
+  background-color: #A3CEEF;
+  padding: 20px;
+}
+
+.guided-tour h2 {
+  color: black;
+  padding: 20px;
+  background: white;
+  border: 10px solid white;
+
+  /*transition: padding 0.3s;
+  -moz-transition: padding 0.3s;
+  -o-transition: padding 0.3s;
+  -webkit-transition: padding 0.3s;*/
+/*  for some reason, this didn't work for me*/
+}
+
+.guided-tour p[id=price] {
+  display: none;
+}
+
+.guided-tour img {
+  width: 80%;
+}
+
+
+.vacation {
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+
+/*photos*/
+
+/*ul [class=photos] {
+  display: none;
+}
+
+.photo-span {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.photo-holder-div {
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.photo-holder-div li {
+  display: inline-flex;
+  margin: auto;
+  width: 25vw;
+}*/
+
+/*filters*/
+
+#filters {
+  margin-top: 20px;
+}
+
+#filters li {
+  display: inline;
+  margin: 0 30px 0 30px;
+}
+
+.highlight-yellow h2 {
+  border: 10px solid;
+  border-color: rgba(255,255,204,0.9);
+/*  text-shadow: 4px 4px #FFFFCC;*/
+}
+
+.highlight-red {
+  color: red;
+}
+
+.highlight-blue h2 {
+  border: 10px solid;
+  border-color: rgba(198,222,255,0.9);
+/*  text-shadow: 2px 2px #C6DEFF;*/
+}
+
+/*buttons*/
+
+.on-sale-button {
+  padding:5px;
+  background-color: #FFFFCC;
+  border: 1px solid #666;
+  color:#000;
+  text-decoration:none;
+}
+
+.featured-button {
+  padding:5px;
+  background-color: #C6DEFF;
+  border: 1px solid #666;
+  color:#000;
+  text-decoration:none;
+}

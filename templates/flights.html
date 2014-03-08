@@ -1,0 +1,35 @@
+{%extends "base.html"%}
+
+{%block head%}
+<title>jQuery Adventures | Flights</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="scripts/script-res.js"></script>
+<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet-flights.css">
+{%endblock%}
+
+{%block content%}
+<div class="title">
+  <h1>Your confirmation number is: {{confirmation}}</h1>
+  <h3>Thank you for flying with jQuery Travel!</h3>
+</div>
+
+<ul class="flight-list">
+
+  {%for flight in flights%}
+
+  <li class="flight" id="flight-{{flight.counter}}">
+    <div class="flight-box">
+      <h3>{{flight.name.capitalize()}} Flight</h3>
+      <p>Depart: {{flight.depart}}</p>
+      <p>Arrive: {{flight.arrive}}</p>
+      <p>Time: {{flight.time}}</p>
+      <p>Status: On Time</p>
+      <p><a class="view-boarding-pass" href="#">View Boarding Pass</a></p>
+    </div>
+    {{flight.boarding_pass | safe}}
+  </li>
+
+  {%endfor%}
+
+</ul>
+{%endblock%}

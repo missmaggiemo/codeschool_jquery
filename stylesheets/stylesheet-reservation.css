@@ -1,0 +1,57 @@
+body {
+  font-family: helvetica;
+  text-align: center;
+}
+
+button, input[type=submit] {
+  margin: 10px;
+  padding:5px;
+  background-color: #dcdcdc;
+  border: 1px solid #666;
+  color:#000;
+  text-decoration: none;
+}
+
+.title {
+  margin: 40px;
+}
+
+.flight-form {
+  width: 50vw;
+  margin: auto;
+  padding: 20px;
+  background-color: #F0F0F0;
+  border: 30px solid #888;
+}
+
+.flight-form form {
+  padding: 10px;
+}
+
+.dest-div, .name-div {
+  padding: 20px 0 20px 0;
+}
+
+.submit-button-div {
+  padding: 0;
+}
+
+.price-div {
+  padding-bottom: 20px;
+}
+
+.input-dest {
+  width: 45%;
+}
+
+input[type=number] {
+  width: 10%;
+}
+
+.input-name {
+  width: 40.6%;
+}
+
+.error {
+  color: red;
+}

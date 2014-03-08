@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" href="stylesheets/stylesheet-base.css" type="text/css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="scripts/script-base.js"></script>
+
+  {%block head%}
+
+  {%endblock%}
+
+</head>
+<body>
+
+  <div class="header">
+
+    <div class="logo">
+      <h1><a href="/">jQuery Travel</a></h1>
+    </div>
+
+    <div class="menu" id="container">
+
+<!--       <div class="menu" id="initial">
+        <button class="show-menu"><h1>Menu</h1></button>
+      </div> -->
+
+      <div class="menu" id="drop-down">
+        <ul id="menu">
+          <li class="menu-item">
+            <a href="/">Home</a>
+          </li>
+          <li class="menu-item">
+            <a href="/#all-destinations">Flights</a>
+          </li>
+          <li class="menu-item">
+            <a href="/#all-tours">Tours</a>
+          </li>
+          <li class="menu-item">
+            <a href="/confirmation">Check Flights</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+  {%block content%}
+
+  {%endblock%}
+
+  <div class="footer">
+    <small>
+      This site was made by <a href="http://www.missmaggiemo.com">Maggie Moreno</a>.
+      Please visit <a href="http://www.missmaggiemo.com/projects">www.missmaggiemo.com/projects</a> for more information.
+    </small>
+  </div>
+
+</body>

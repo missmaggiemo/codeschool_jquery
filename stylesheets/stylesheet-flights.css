@@ -1,0 +1,50 @@
+
+.title h1 {
+  text-align: center;
+  margin: 40px;
+}
+
+.flights-list {
+  display: table-row;
+  width: 100vw;
+  text-align: center;
+  padding: 0;
+  margin: auto;
+}
+
+li[class=flight] {
+  display: table-cell;
+  width: 30vw;
+  padding: 20px;
+}
+
+.flight-box {
+  background-color: #A3CEEF;
+  padding: 20px;
+}
+
+.flight-box h3 {
+  text-align: left;
+  color: black;
+  background-color: white;
+  padding: 10px;
+  margin: 20px;
+}
+
+.flight-box p {
+  text-align: left;
+  margin: 20px;
+}
+
+.flight .ticket {
+  display: none;
+  width: 25vw;
+  margin: 20px 0 20px 0;
+  border: 20px solid black;
+  background-color: white;
+}
+
+.ticket span {
+  display: block;
+  margin: 10px
+}

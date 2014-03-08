@@ -1,0 +1,95 @@
+
+
+.title {
+/*  font-size: 2em;*/
+  background-color: #A3CEEF;
+  width: 50vw;
+  padding: 20px;
+  margin: auto;
+}
+
+.title p {
+  font-size: 1.5em;
+}
+
+.title h1, p {
+  padding: 20px;
+  margin: 0;
+}
+
+.content {
+  width: 70vw;
+  margin: auto;
+  padding: 30px;
+}
+
+.flight-form {
+  text-alight: center;
+  width: 50vw;
+  padding: 30px;
+  margin: auto;
+}
+
+.flight-form table {
+  width: 100%;
+  text-align: left;
+}
+
+.flight-form td[id=input] {
+  text-align: left;
+}
+
+.flight-form td[id=label] {
+  text-align: right;
+}
+
+td[id=input] input {
+  width: 190%
+}
+
+td[id=name] input {
+  width: 98%
+}
+
+.destination-ul {
+  display: table-row;
+  margin: auto;
+}
+
+.destination-ul li[class=destination-li] {
+  display: table-cell;
+  width: 100%;
+}
+
+.destination-ul li[class=destination-li] .destination {
+  width: 30vw;
+  padding: 20px;
+}
+
+.more-info {
+  background-color: #A3CEEF;
+}
+
+.more-info p {
+  padding: 0 0 15px 0;
+}
+
+.more-info #buttons {
+  display: block;
+  margin: 10px auto;
+}
+
+#buttons .button {
+  display: inline-block;
+  width: 40%
+}
+
+.more-info #price {
+  margin: 10px;
+}
+
+.more-info h3 {
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+}

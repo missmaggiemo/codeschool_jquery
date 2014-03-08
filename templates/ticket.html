@@ -1,0 +1,13 @@
+<!-- flight ticket html -->
+
+{%if flight%}
+
+<div class="ticket">
+  <p>
+    <span>Flight Number: {{flight.flight_number}}</span>
+    <span>Confirmation Number: {{flight.confirmation}}</span>
+  </p>
+  <img src="images/jquery_QR.png" alt="QR_Code" />
+</div>
+
+{%endif%}

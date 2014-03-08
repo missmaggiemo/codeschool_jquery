@@ -1,0 +1,106 @@
+<!-- tour page -->
+
+{%extends "base.html"%}
+
+{%block head%}
+<title>jQuery Adventures | Book Your Tour</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="scripts/script-booking.js"></script>
+<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet-dest.css">
+{%endblock%}
+
+
+
+{%block content%}
+<div class="title">
+  <h1 id="dest">{{destination.split(',')[0]}} Guided Tour</h1>
+</div>
+
+
+
+<div class="content">
+  <ul class="destination-ul">
+
+    <li class="destination-li">
+      <div class="destination more-info" id="dest-name">
+        <h3  id="dest">{{destination}}</h3>
+        <img src="images/{{dest}}.jpg" alt="Rome" />
+        <div id="price">
+          <div id="promo">
+            Spend 7 nights in beautiful {{destination}}!<br><br>
+            Price: ${{price}} per person.
+          </div>
+        </div>
+<!--         <div id="buttons">
+          <div class="button" id="photos"><button>See Photos</button></div>
+        </div> -->
+      </div>
+    </li>
+
+    <li class="destination-li">
+      <div class="destination flight-form" data-price={{price}}>
+        <h3  id="book-tour">Book it.</h3>
+        <form id="book-tour" method="post">
+          <input type="hidden" name="arrive" value="{{dest}}">
+          <table>
+            <tr>
+              <td id="label">
+                <label for="nights">Name:</label>
+              </td>
+              <td id="name">
+                <input type="text" class="input-name first-name" name="first-name" value="" placeholder="First">
+              </td>
+              <td id="name">
+                <input type="text" class="input-name last-name" name="last-name" value="" placeholder="Last">
+              </td>
+
+            </tr>
+
+            <tr>
+              <td id="label">
+                <label for="depart">Departing from:</label>
+              </td>
+
+              <td id="input">
+                <input type="text" name="depart" value="">
+              </td>
+
+            </tr>
+
+            <tr>
+              <td id="label">
+                <label for="num_people">Number of People:</label>
+              </td>
+
+              <td id="input">
+                <input type="number" id="num-people" name="num_people" value="1">
+              </td>
+
+            </tr>
+
+          </table>
+
+          {%if error%}
+          <p class="error">{{error}}</p>
+          {%endif%}
+
+          <p>
+            Total Price: $<span id="price-total">{{price}}</span>
+            <input type="hidden" name="price" id="price-input" value="{{price}}">
+<!--               needs to be set with span in JS -->
+          </p>
+
+          <input type="submit" name="book-it" value="Book My Tour">
+
+        </form>
+      </div>
+    </li>
+
+
+  </ul>
+</div>
+
+<div class="photos">
+</div>
+
+{%endblock%}

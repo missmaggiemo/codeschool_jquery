@@ -1,0 +1,231 @@
+<!-- scraps -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery Adventures</title>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="scripts/script-1.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet-1.css">
+</head>
+<body>
+
+  <div class="title">
+    <h1>jQuery Travel</h1>
+    <h2><em>Where do you want to go?</em></h2>
+  </div>
+
+<!-- destinations -->
+
+  <div class="destinations">
+
+    <h2>Travel Destinations</h2>
+    <p><em>Plan your next adventure.</em></p>
+    <ul id="dest-ul">
+
+      <li>
+        <div class="destination name" id="dest-1">
+          <h3><a href="/destination?dest=rome">Rome, Italy</a></h3>
+          <button>More Info</button>
+        </div>
+        <div class="destination more-info" id="dest-1">
+          <h3><a href="/destination?dest=rome">Rome, Italy</a></h3>
+          <img src="images/rome.jpg" alt="Rome" />
+          <button>Weather</button>
+        </div>
+      </li>
+      <li>
+        <div class="destination name" id="dest-2">
+          <h3><a href="/destination?dest=paris">Paris, France</a></h3>
+          <button>More Info</button>
+        </div>
+        <div class="destination more-info" id="dest-2">
+          <h3><a href="/destination?dest=paris">Paris, France</a></h3>
+          <img src="images/paris.jpg" alt="Paris" />
+          <button>Weather</button>
+        </div>
+      </li>
+      <li>
+        <div class="destination name" id="dest-3">
+          <h3><a href="/destination?dest=rio">Rio De Janeiro, Brazil</a></h3>
+          <button>More Info</button>
+        </div>
+        <div class="destination more-info" id="dest-3">
+          <h3><a href="/destination?dest=rio">Rio De Janeiro, Brazil</a></h3>
+          <img src="images/rio.jpg" alt="Rio De Janeiro" />
+          <button>Weather</button>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+<!-- guided tours -->
+
+  <div id="all-tours">
+    <div class="guided-title">
+      <h1>Guided Tours</h1>
+    </div>
+    <ul id="tour-ul">
+
+      <li class="usa tour on-sale" data-discount="299" data-daily-price="600">
+        <div class="guided-tour">
+          <a href="/tour?dest=london"><h2 class="dest">London, England</h2></a>
+          <p id="date">November</p>
+          <img src="images/london.jpg" alt="London" />
+          <p id="nights">Nights: 7</p>
+
+          <button>Show Price</button>
+
+        </div>
+      </li>
+
+      <li class="europe tour on-sale" data-discount="176" data-daily-price="357">
+        <div class="guided-tour">
+          <a href="/tour?dest=barcelona"><h2 class="dest">Barcelona, Spain</h2></a>
+          <p id="date">May</p>
+          <img src="images/barcelona.jpg" alt="Barcelona" />
+          <p id="nights">Nights: 7</p>
+
+          <button>Show Price</button>
+
+        </div>
+      </li>
+
+      <li class="asia tour featured" data-discount="349" data-daily-price="700">
+        <div class="guided-tour">
+          <a href="/tour?dest=tokyo"><h2 class="dest">Tokyo, Japan</h2></a>
+          <p id="date">June</p>
+          <img src="images/tokyo.jpg" alt="Tokyo" />
+          <p id="nights">Nights: 7</p>
+
+          <button>Show Price</button>
+
+        </div>
+      </li>
+
+    </ul>
+    <ul id="filters">
+      <li><button class="on-sale-button">On Sale</button></li>
+      <li><button class="featured-button">Featured</button></li>
+    </ul>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+<div id="all-tours">
+  <div class="guided-title">
+    <h1>Guided Tours</h1>
+  </div>
+  <ul id="tour-ul">
+
+    <li class="usa tour on-sale" data-discount="299" data-daily-price="600">
+      <div class="guided-tour">
+        <h2 class="nyc">New York, New York</h2>
+        <p>
+          $<span id="total">1,899</span> for <span id="nights-count">7</span> Nights
+        </p>
+        <div class="vacation">
+          <form action="/book" method="post">
+            <input type="hidden" name="destination" value="New York, New York">
+            <input type="hidden" id="totalPrice" name="totalPrice" value="1899">
+            <label for="nights">Number of Nights:</label>
+            <input type="number" id="nights" name="nights" value="7">
+            <input type="submit" value="Book Now">
+          </form>
+        </div>
+        <span id="phone-number"></span>
+      </div>
+    </li>
+
+    <li class="europe tour on-sale" data-discount="176" data-daily-price="357">
+      <div class="guided-tour">
+        <h2 class="paris">Paris, France Tour</h2>
+        <p>
+          $<span id="total">2,499</span> for <span id="nights-count">7</span> Nights
+        </p>
+        <div class="vacation">
+          <form action="/book" method="post">
+            <input type="hidden" name="destination" value="Paris, France">
+            <input type="hidden" id="totalPrice" name="totalPrice" value="2499">
+            <label for="nights">Number of Nights:</label>
+            <input type="number" name="nights" value="7">
+            <input type="submit" value="Book Now">
+          </form>
+        </div>
+        <span id="phone-number"></span>
+      </div>
+
+
+<!--         <div class="photo-holder-div">
+        <a href="#" class="see-photos"><em>See Photos</em></a>
+        <ul class="photos">
+          <li>
+            <span class="photo-span"><img src="images/paris1.jpg">
+              <br>The Eiffel Tower
+            </span>
+          </li>
+          <li>
+            <span class="photo-span"><img src="images/paris2.jpg">
+              <br>Arc de Triomphe
+            </span>
+          </li>
+          <li>
+            <span class="photo-span"><img src="images/paris3.jpg">
+              <br>Bridge over the Seine River
+            </span>
+          </li>
+        </ul>
+      </div> -->
+
+    </li>
+
+    <li class="asia tour featured" data-discount="349" data-daily-price="700">
+      <div class="guided-tour">
+        <h2 class="tokyo">Tokyo, Japan</h2>
+        <p>
+          $<span id="total">3,799</span> for <span id="nights-count">7</span> Nights
+        </p>
+        <div class="vacation">
+          <form action="/book" method="post">
+            <input type="hidden" name="destination" value="Tokyo, Japan">
+            <input type="hidden" id="totalPrice" name="totalPrice" value="3799">
+            <label for="nights">Number of Nights:</label>
+            <input type="number" name="nights" value="7">
+            <input type="submit" value="Book Now">
+          </form>
+        </div>
+        <span id="phone-number"></span>
+      </div>
+    </li>
+
+  </ul>
+  <ul id="filters">
+    <li><button class="on-sale-button">On Sale</button></li>
+    <li><button class="featured-button">Featured</button></li>
+  </ul>
+</div>
+
+
+
+
+
+
+
+<input id="confirm" type="hidden" name="confirm" value={{confirm}}>
+<label for="nights">Name:</label>
+<input type="text" class="input-name first-name" name="first-name" value="" placeholder="First">
+<input type="text" class="input-name last-name" name="last-name" value="" placeholder="Last">

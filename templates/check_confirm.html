@@ -1,0 +1,32 @@
+<!-- check your flights with your confirmation number -->
+
+{%extends "base.html"%}
+
+{%block head%}
+<title>jQuery Adventures | Flights</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="scripts/script-res.js"></script>
+<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet-confirm.css">
+{%endblock%}
+
+
+{%block content%}
+
+<div class="title">
+  <h1 id="title">Check Your Flights</h1>
+</div>
+
+<div class="check-flights-form">
+
+  <form id="check-flights" action="/check-flights" method="post">
+      <label for="confirmation">Confirmation Number:</label>
+      <input type="text" name="confirmation" value="">
+      <input type="submit" name="find-flights" value="Find My Flights">
+  </form>
+</div>
+
+<div class="flights ajax-div">
+
+</div>
+
+{%endblock%}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery Adventures</title>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="scripts/script-res.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet-reservation.css">
+</head>
+<body>
+  
+  <div class="title">
+    <h1>Book Your Flight</h1>
+  </div>
+  
+  <div class="flight-form">
+    <p>Destination: {{arrive}}, Nights: {{nights}}, Price: ${{price}}</p>
+    <div class="form-div">
+      
+      <form method="post">
+        <input id="confirm" type="hidden" name="confirm" value={{confirm}}>
+        <label for="nights">Name:</label>
+        <input type="text" class="input-name first-name" name="first-name" value="" placeholder="First">
+        <input type="text" class="input-name last-name" name="last-name" value="" placeholder="Last">
+        {%if error%}
+        <p class="error">{{error}}</p>
+        {%endif%}
+        <div class="submit-button-div">
+          <input type="submit" value="Book Your Trip">
+        </div>
+      </form>
+      
+    </div>
+    
+  </div>
+  
+</body>
